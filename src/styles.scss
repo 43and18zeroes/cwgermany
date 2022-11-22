@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-$dark-blue-bg: #141D2F;
-
 @font-face {
     font-family: 'Poppins';
     src: url("assets/fonts/poppins/Poppins-Regular.ttf");
@@ -11,3 +9,6 @@ body {
     font-family: 'Poppins';
 }
 
+.container {
+    width: 1440px;
+}
