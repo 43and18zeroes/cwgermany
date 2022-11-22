@@ -1,6 +1,52 @@
 @import "../../styles/settings/_variables.scss";
 
-.hero__content {
+.hero__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__section {
     background-color: $dark-blue-bg;
     height: 100vh;
+}
+
+.hero__content {
+    display: flex;
+
+    img {
+        width: 646px;
+        height: 705px;
+    }
+}
+
+.hero__text {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    span {
+        transform: rotate(-90deg);
+        font-size: 64px;
+    }
+}
+
+.hero__name {
+    h1 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 68px;
+    }
+
+    h2 {
+        margin: -16px 0 0 0;
+        font-size: 58px;
+        color: #4B47FF;
+        text-transform: uppercase;
+    }
+}
+
+.hero__talk {
+    margin-top: 64px;
+    text-align: center;
 }

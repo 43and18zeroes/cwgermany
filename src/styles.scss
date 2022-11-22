@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./styles/settings/_variables.scss";
+
 @font-face {
     font-family: 'Poppins';
     src: url("assets/fonts/poppins/Poppins-Regular.ttf");
@@ -7,8 +9,20 @@
 body {
     margin: 0;
     font-family: 'Poppins';
+    color: $primary-text;
+    font-weight: 400;
 }
 
 .container {
     width: 1440px;
+    padding: 0 100px;
+}
+
+.button__lightblue {
+    padding: 15px 30px;
+    background-color: $light-blue;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 23px;
 }
