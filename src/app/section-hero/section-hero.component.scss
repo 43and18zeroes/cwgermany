@@ -22,13 +22,20 @@
 
 .hero__text {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex: 1;
+}
 
+.hero__me {
+    transform: rotate(-90deg);
     span {
-        transform: rotate(-90deg);
         font-size: 64px;
+        white-space: nowrap;
     }
+}
+
+.hero__intro {
+    display: flex;
 }
 
 .hero__name {
@@ -44,9 +51,4 @@
         color: #4B47FF;
         text-transform: uppercase;
     }
-}
-
-.hero__talk {
-    margin-top: 64px;
-    text-align: center;
 }
