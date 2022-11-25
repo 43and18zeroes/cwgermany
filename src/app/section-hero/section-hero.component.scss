@@ -23,14 +23,21 @@
 .hero__text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    white-space: nowrap;
+
+    button {
+        margin-top: 32px;
+    }
 }
 
 .hero__me {
     rotate: (-90deg);
     font-size: 64px;
-    white-space: nowrap;
     height: fit-content;
+    margin-top: 45px;
+    margin-right: -8px;
 }
 
 .hero__intro {
@@ -40,9 +47,9 @@
 .hero__name {
     h1 {
         margin: 0;
+        margin-bottom: 8px;
         font-weight: 700;
         font-size: 68px;
-        white-space: nowrap;
     }
 
     h2 {
@@ -50,6 +57,5 @@
         font-size: 58px;
         color: #4B47FF;
         text-transform: uppercase;
-        white-space: nowrap;
     }
 }
