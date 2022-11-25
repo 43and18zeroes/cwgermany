@@ -27,11 +27,10 @@
 }
 
 .hero__me {
-    transform: rotate(-90deg);
-    span {
-        font-size: 64px;
-        white-space: nowrap;
-    }
+    rotate: (-90deg);
+    font-size: 64px;
+    white-space: nowrap;
+    height: fit-content;
 }
 
 .hero__intro {
@@ -43,6 +42,7 @@
         margin: 0;
         font-weight: 700;
         font-size: 68px;
+        white-space: nowrap;
     }
 
     h2 {
@@ -50,5 +50,6 @@
         font-size: 58px;
         color: #4B47FF;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 }
