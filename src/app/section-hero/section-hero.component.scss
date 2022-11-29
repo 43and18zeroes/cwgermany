@@ -76,3 +76,12 @@
         text-transform: uppercase;
     }
 }
+
+.hero__transition {
+    position: relative;
+
+    img {
+        position: absolute;
+        left: -100px;
+    }
+}
