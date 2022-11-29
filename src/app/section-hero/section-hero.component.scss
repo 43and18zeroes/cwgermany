@@ -82,6 +82,20 @@
 
     img {
         position: absolute;
-        left: -100px;
+        left: 0;
+        margin-top: -185px;
+        z-index: 1000;
     }
+}
+
+.hero__footer {
+    z-index: 10000;
+}
+
+.hero__contact {
+    z-index: 10000;
+}
+
+.hero__scroll__down {
+    z-index: 10000;
 }
