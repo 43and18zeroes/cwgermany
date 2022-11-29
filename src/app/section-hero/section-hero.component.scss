@@ -13,19 +13,33 @@
 
 .hero__content {
     display: flex;
+}
 
-    img {
-        width: 646px;
-        height: 705px;
-    }
+.hero__picture {
+    position: relative;
+    height: 705px;
+    flex: 1;
+}
+
+.bgfog__1 {
+    position: absolute;
+    width: 100%;
+}
+
+.photo__portrait {
+    position: absolute;
+    top: 0;
+    z-index: 100;
 }
 
 .hero__text {
+    width: 760px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+
 
     button {
         margin-top: 32px;
@@ -50,6 +64,7 @@
         margin-bottom: 8px;
         font-weight: 700;
         font-size: 68px;
+        letter-spacing: -0.01em;
     }
 
     h2 {
