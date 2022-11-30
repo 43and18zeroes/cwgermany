@@ -1,3 +1,5 @@
+@import "../../styles/settings/_variables.scss";
+
 header {
     z-index: 99999999999;
     position: absolute;
@@ -6,6 +8,8 @@ header {
     display: flex;
     justify-content: center;
     height: 106px;
+    position: fixed;
+    background-color: $dark-blue-bg;
 
     a {
         color: white;
