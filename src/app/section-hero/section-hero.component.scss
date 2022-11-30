@@ -77,20 +77,9 @@
     }
 }
 
-.hero__transition {
-    position: relative;
-
-    img {
-        position: absolute;
-        left: 0;
-        margin-top: -380px;
-        z-index: 1000;
-        width: 100%;
-    }
-}
-
 .hero__footer {
     z-index: 10000;
+    position: relative;
 }
 
 .hero__contact {
@@ -99,4 +88,15 @@
 
 .hero__scroll__down {
     z-index: 10000;
+}
+
+.hero__transition {
+    position: relative;
+
+    img {
+        position: absolute;
+        margin-top: -380px;
+        width: 100%;
+        z-index: 100;
+    }
 }
