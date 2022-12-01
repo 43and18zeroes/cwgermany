@@ -11,11 +11,19 @@
     height: 100vh;
 }
 
+.hero__flex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .hero__content {
     display: flex;
+    flex: 1;
 }
 
 .hero__picture {
+    margin-top: $header-height;
     position: relative;
     height: 705px;
     flex: 1;
