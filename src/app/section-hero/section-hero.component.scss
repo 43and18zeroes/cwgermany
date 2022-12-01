@@ -20,10 +20,11 @@
 .hero__content {
     display: flex;
     flex: 1;
+    align-items: flex-start;
+    margin-top: $header-height;
 }
 
 .hero__picture {
-    margin-top: $header-height;
     position: relative;
     height: 705px;
     flex: 1;
@@ -48,6 +49,7 @@
     align-items: center;
     white-space: nowrap;
     z-index: 1000;
+    padding-top: 250px;
 
     button {
         margin-top: 32px;
