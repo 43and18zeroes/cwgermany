@@ -14,10 +14,10 @@ header {
     a {
         color: white;
         text-decoration: none;
-        transition: 75ms ease-in-out;
+        transition: all .75 ease-in-out;
 
         &:hover {
-            text-shadow: white 0 0 4px;
+            color: $light-blue;
         }
     }
 }

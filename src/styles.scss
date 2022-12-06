@@ -18,11 +18,18 @@ body {
     padding: 0 $padding-container;
 }
 
-.button__lightblue {
+.btn__lightblue {
     padding: 15px 30px;
     background-color: $light-blue;
     border-radius: 10px;
     border: none;
     color: white;
     font-size: 23px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1); 
+        background-color: $purple-accent;
+    }
 }
