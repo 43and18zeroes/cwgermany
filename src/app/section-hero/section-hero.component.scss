@@ -94,12 +94,36 @@
     position: relative;
 }
 
-.hero__contact {
-    z-index: 10000;
+.hero__line {
+    position: relative;
+    hr {
+        width: 100px;
+        position: absolute;
+        margin-left: -100px;
+        border: 5px solid $purple-accent;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 }
 
-.hero__scroll__down {
-    z-index: 10000;
+.hero__btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__contact {
+    display: flex;
+
+    a {
+        margin-left: 36px;
+    }
+}
+
+.hero__contact__mail {
+    margin-top: -8px;
+    color: $primary-text;
+    font-size: 28px;
+    text-decoration: none;
 }
 
 .hero__transition {
