@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero__section {
@@ -101,12 +103,20 @@
 }
 
 .hero__transition {
-    position: relative;
+    position: absolute;
+    margin-top: -380px;
+    width: 100%;
+    z-index: 100;
+    top: 100vh;
+    right: 0;
+    left: 0;
+    width: 100%;
 
-    img {
-        position: absolute;
-        margin-top: -380px;
-        width: 100%;
-        z-index: 100;
+    @media (max-width: 1400px) {
+        top: 110vh;
+    }
+
+    @media (min-width: 1921px) {
+        top: 90vh;
     }
 }
