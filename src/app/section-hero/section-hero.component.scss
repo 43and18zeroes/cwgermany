@@ -125,20 +125,24 @@
 .hero__contact__mail {
     margin-top: -8px;
     color: $primary-text;
-    font-size: 28px;
+    font-size: 26px;
     text-decoration: none;
 }
 
 .hero__scroll__down {
     rotate: 90deg;
-    margin-top: -170px;
+    margin-top: -160px;
     white-space: nowrap;
 
     a {
         margin-top: -8px;
         color: $primary-text;
-        font-size: 28px;
+        font-size: 26px;
         text-decoration: none;
+    }
+
+    img {
+        margin-bottom: -1px;
     }
 }
 
