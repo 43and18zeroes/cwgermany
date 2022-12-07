@@ -5,6 +5,16 @@
     justify-content: center;
 }
 
+.aboutme__bgfog {
+    position: relative;
+
+    img {
+        position: fixed;
+        right: 0;
+        width: 150px;
+    }
+}
+
 .aboutme__content {
     display: flex;
     justify-content: space-between;
