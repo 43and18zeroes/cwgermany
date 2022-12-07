@@ -1,3 +1,5 @@
+@import "../../styles/settings/_variables.scss";
+
 .aboutme__section {
     display: flex;
     justify-content: center;
@@ -8,15 +10,14 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    font-size: 16px;
+    line-height: 19.2px;
 
-    p {
-        font-size: 16px;
-        line-height: 19.2px;
-    }
 }
 
 .aboutme__text {
-    min-width: 471px;
+    max-width: 600px;
+    margin-right: 24px;
 
     h1 {
         font-size: 90px;
@@ -27,11 +28,21 @@
 
 .aboutme__bullet {
     display: flex;
+    margin-top: 16px;
 }
 
 .aboutme__bullet__single {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.aboutme__bullet__single {
+    width: 150px;
+}
+
+.aboutme__bullet__text {
+    flex: 1;
 }
 
 .aboutme__bulb {
@@ -42,4 +53,17 @@
 .aboutme__jigsawpiece {
     width: 45px;
     height: 45px;
+}
+
+.aboutme__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 24px;
+
+    img {
+        border: solid 4px $light-blue;
+        border-radius: 100%;
+    }
 }
