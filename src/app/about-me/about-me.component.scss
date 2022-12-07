@@ -1,0 +1,45 @@
+.aboutme__section {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+
+    p {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+}
+
+.aboutme__text {
+    min-width: 471px;
+
+    h1 {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+    }
+}
+
+.aboutme__bullet {
+    display: flex;
+}
+
+.aboutme__bullet__single {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme__bulb {
+    width: 35px;
+    height: 50px;
+}
+
+.aboutme__jigsawpiece {
+    width: 45px;
+    height: 45px;
+}
