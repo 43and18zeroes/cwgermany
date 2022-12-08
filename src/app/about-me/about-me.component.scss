@@ -11,7 +11,11 @@
     img {
         position: fixed;
         right: 0;
-        width: 150px;
+        width: 200px;
+
+        @media (max-width: 1400px) {
+            width: 176px;
+        }
     }
 }
 
@@ -100,8 +104,4 @@
         border: 0;
         border-top: 4px solid $light-blue;
     }
-
-    // @media (min-width: 1921px) {
-    //     width: 350px;
-    // }
 }
