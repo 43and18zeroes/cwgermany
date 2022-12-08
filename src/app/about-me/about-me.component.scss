@@ -82,24 +82,26 @@
     margin-left: 24px;
 
     img {
+        background-color: $dark-blue-bg;
         border: solid 4px $light-blue;
         border-radius: 100%;
+        z-index: 10;
 
         @media (max-width: 1150px) {
             width: 350px;
         }
     }
-}
-
-.aboutme__pc__hr {
-    position: relative;
 
     hr {
-        width: 500px;
+        width: 35vw;
         position: fixed;
         right: 0;
-        margin-top: 10px;
+        margin-top: 0px;
         border: 0;
-        border-top: 4px solid $purple-accent;
+        border-top: 4px solid $light-blue;
     }
+
+    // @media (min-width: 1921px) {
+    //     width: 350px;
+    // }
 }
