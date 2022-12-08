@@ -90,3 +90,16 @@
         }
     }
 }
+
+.aboutme__pc__hr {
+    position: relative;
+
+    hr {
+        width: 500px;
+        position: fixed;
+        right: 0;
+        margin-top: 10px;
+        border: 0;
+        border-top: 4px solid $purple-accent;
+    }
+}
