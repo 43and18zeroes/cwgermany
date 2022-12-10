@@ -3,6 +3,8 @@
 .aboutme__section {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .aboutme__bgfog {
