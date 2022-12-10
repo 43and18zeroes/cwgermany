@@ -95,12 +95,12 @@
 
 .hero__line {
     position: relative;
+    z-index: 1000;
 
     hr {
-        width: 100px;
-        position: fixed;
+        position: absolute;
         left: 0;
-        margin-top: 10px;
+        width: 100px;
         border: 0;
         border-top: 8px solid $purple-accent;
         border-top-right-radius: 20px;
