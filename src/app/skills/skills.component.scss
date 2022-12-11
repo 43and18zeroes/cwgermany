@@ -3,27 +3,31 @@
 .skills {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .skills__content {
     display: flex;
-    height: calc(100vh - $header-height);
+    // height: calc(100vh - $header-height);
 }
 
 .skills__logos {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-right: 48px;
 
     img {
         height: 100px;
+        margin: 0 64px 32px 64px;
     }
 }
 
 .skills__text {
+    padding-top: 48px;
     width: 475px;
     flex-shrink: 0;
+    margin-right: 64px;
+
 
     .skills__h2 {
         text-align: center;
