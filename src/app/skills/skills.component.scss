@@ -1,0 +1,19 @@
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__content {
+    display: flex;
+    height: 100vh;
+}
+
+.skills__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    img {
+        height: 100px;
+    }
+}
