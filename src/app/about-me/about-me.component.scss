@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - $header-height);
     font-size: 16px;
     line-height: 19.2px;
 
