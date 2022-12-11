@@ -82,5 +82,10 @@
         margin-top: 64px;
         text-align: center;
     }
+}
 
+.skills__bgfog {
+    position: absolute;
+    left: 0;
+    z-index: -10;
 }
