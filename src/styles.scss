@@ -19,6 +19,22 @@ body {
     padding: 0 $padding-container;
 }
 
+h2 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+    display: inline;
+
+    @media (max-width: 1150px) {
+        font-size: 72px;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
 .btn__lightblue {
     padding: 15px 30px;
     background-color: $light-blue;

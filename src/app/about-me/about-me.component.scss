@@ -25,25 +25,11 @@
     justify-content: space-between;
     align-items: center;
     height: calc(100vh - $header-height);
-    font-size: 16px;
-    line-height: 19.2px;
-
 }
 
 .aboutme__text {
     max-width: 600px;
     margin-right: 24px;
-
-    h2 {
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 108px;
-        display: inline;
-
-        @media (max-width: 1150px) {
-            font-size: 72px;
-        }
-    }
 }
 
 .aboutme__bullet {
