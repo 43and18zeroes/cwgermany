@@ -16,17 +16,43 @@
     flex-wrap: wrap;
     align-content: flex-start;
 
+    .skills__logo {
+        width: 160px;
+        height: 160px;
+
+        @media (max-width: 1236px) {
+            width: 130px;
+            height: 130px;
+        }
+
+        @media (max-width: 1145px) {
+            width: 115px;
+            height: 115px;
+        }
+    }
+
     img {
         height: 100px;
-        margin: 0 64px 32px 64px;
+
+        @media (max-width: 1236px) {
+            height: 82px;
+        }
+
+        @media (max-width: 1145px) {
+            height: 74px;
+        }
     }
 }
 
 .skills__text {
-    padding-top: 48px;
     width: 475px;
     flex-shrink: 0;
     margin-right: 64px;
+
+    @media (max-width: 1145px) {
+        width: 350px;
+        margin-right: 0;
+    }
 
 
     .skills__h2 {
