@@ -56,7 +56,22 @@
 
 
     .skills__h2 {
-        text-align: center;
+        text-align: right;
+    }
+
+    hr {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        border: 0;
+        border-top: 8px solid $purple-accent;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: -60px;
+
+        @media (max-width: 1145px) {
+            width: 50px;
+        }
     }
 
     p {
