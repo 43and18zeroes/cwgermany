@@ -3,7 +3,6 @@
 .skills {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
 }
 
 .skills__content {
@@ -19,6 +18,8 @@
     .skills__logo {
         width: 160px;
         height: 160px;
+        display: flex;
+        align-items: center;
 
         @media (max-width: 1236px) {
             width: 130px;
