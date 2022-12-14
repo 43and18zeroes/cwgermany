@@ -38,10 +38,23 @@
 
 .portfolio__examples__picleft {
     display: flex;
+    justify-content: center;
+    padding-top: 100px;
 
-    .portfolio__examples__picleft__pic {}
+    .portfolio__examples__picleft__pic {
+        width: 620px;
+        height: 339px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 
     .portfolio__examples__picleft__text {
+        max-width: 513px;
+        padding-top: 16px;
+        padding-left: 16px;
+
         h3 {
             font-size: 32px;
             color: $purple-accent;
