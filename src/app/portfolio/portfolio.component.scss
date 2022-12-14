@@ -50,12 +50,30 @@
         justify-content: flex-end;
         align-items: center;
         margin-right: 96px;
+
+        @media (max-width: 1145px) {
+            img {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 1066px) {
+            margin-right: 48px;
+
+            img {
+                width: 290px;
+            }
+        }
     }
 
     .portfolio__examples__picleft__text {
         width: 50%;
         padding-top: 16px;
         margin-left: 48px;
+
+        @media (max-width: 1066px) {
+            margin-left: 24px;
+        }
 
         h3 {
             font-size: 32px;
