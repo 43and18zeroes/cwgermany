@@ -5,6 +5,7 @@
     justify-content: center;
     position: relative;
     z-index: 1000;
+    padding-top: 150px;
 }
 
 .aboutme__bgfog {
@@ -24,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - $header-height);
+
 }
 
 .aboutme__text {
