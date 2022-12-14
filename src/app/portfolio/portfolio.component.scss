@@ -65,10 +65,54 @@
             font-size: 23px;
             font-weight: 400;
             color: $light-blue;
+            line-height: 0;
         }
 
         .portfolio__buttons {
+            display: flex;
+            padding-top: 16px;
 
+            .portfolio__buttons__live {
+                font-size: 23px;
+                padding: 15px 30px;
+                border-radius: 10px;
+                border: none;
+                display: block;
+                background-color: $purple-accent;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                margin-right: 64px;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .portfolio__buttons__github {
+                font-size: 23px;
+                padding: 15px 30px;
+                border-radius: 10px;
+                border: 1px solid $light-blue;
+                display: block;
+                background-color: transparent;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                margin-right: 64px;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
     }
+}
