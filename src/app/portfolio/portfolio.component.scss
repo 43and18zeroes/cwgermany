@@ -42,18 +42,19 @@
     padding-top: 100px;
 
     .portfolio__examples__picleft__pic {
-        width: 620px;
+        width: 50%;
         height: 339px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-
+        margin-right: 96px;
     }
 
     .portfolio__examples__picleft__text {
-        max-width: 513px;
+        width: 50%;
         padding-top: 16px;
         padding-left: 16px;
+        margin-left: 48px;
 
         h3 {
             font-size: 32px;
