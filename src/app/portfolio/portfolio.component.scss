@@ -1,6 +1,8 @@
 @import "../../styles/settings/_variables.scss";
 
 .portfolio {
+    display: flex;
+    justify-content: center;
     padding-top: 100px;
 }
 
@@ -90,6 +92,7 @@
                 a {
                     color: white;
                     text-decoration: none;
+                    white-space: nowrap;
                 }
             }
 
