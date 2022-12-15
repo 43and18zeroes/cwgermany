@@ -49,7 +49,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 96px;
+        margin-right: 64px;
 
         @media (max-width: 1145px) {
             img {
@@ -69,7 +69,7 @@
     .portfolio__examples__picleft__text {
         width: 50%;
         padding-top: 16px;
-        margin-left: 48px;
+        margin-left: 64px;
 
         @media (max-width: 1066px) {
             margin-left: 24px;
@@ -149,7 +149,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 96px;
+        margin-left: 64px;
 
         @media (max-width: 1145px) {
             img {
@@ -169,7 +169,7 @@
     .portfolio__examples__picright__text {
         width: 50%;
         padding-top: 16px;
-        margin-right: 48px;
+        margin-right: 64px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
