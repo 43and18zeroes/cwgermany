@@ -137,3 +137,103 @@
         }
     }
 }
+
+.portfolio__examples__picright {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+    .portfolio__examples__picright__pic {
+        width: 50%;
+        height: 339px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 96px;
+
+        @media (max-width: 1145px) {
+            img {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 1066px) {
+            margin-left: 48px;
+
+            img {
+                width: 290px;
+            }
+        }
+    }
+
+    .portfolio__examples__picright__text {
+        width: 50%;
+        padding-top: 16px;
+        margin-right: 48px;
+
+        @media (max-width: 1066px) {
+            margin-right: 24px;
+        }
+
+        h3 {
+            font-size: 32px;
+            color: $purple-accent;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-size: 23px;
+            font-weight: 400;
+            color: $light-blue;
+            line-height: 0;
+        }
+
+        .portfolio__buttons {
+            display: flex;
+            padding-top: 16px;
+
+            .portfolio__buttons__live {
+                font-size: 23px;
+                padding: 15px 30px;
+                border-radius: 10px;
+                border: none;
+                display: block;
+                background-color: $purple-accent;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                margin-left: 64px;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    white-space: nowrap;
+                }
+            }
+
+            .portfolio__buttons__github {
+                font-size: 23px;
+                padding: 15px 30px;
+                border-radius: 10px;
+                border: 1px solid $light-blue;
+                display: block;
+                background-color: transparent;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                margin-left: 64px;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
