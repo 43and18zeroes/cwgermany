@@ -1,5 +1,7 @@
 @import "../../styles/settings/_variables.scss";
 
+$portfolio-examples-distances: 100px;
+
 .portfolio {
     display: flex;
     justify-content: center;
@@ -49,7 +51,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 64px;
+        margin-right: $portfolio-examples-distances;
 
         @media (max-width: 1145px) {
             img {
@@ -69,7 +71,7 @@
     .portfolio__examples__picleft__text {
         width: 50%;
         padding-top: 16px;
-        margin-left: 64px;
+        margin-left: $portfolio-examples-distances;
 
         @media (max-width: 1066px) {
             margin-left: 24px;
@@ -149,7 +151,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 64px;
+        margin-left: $portfolio-examples-distances;
 
         @media (max-width: 1145px) {
             img {
@@ -169,10 +171,11 @@
     .portfolio__examples__picright__text {
         width: 50%;
         padding-top: 16px;
-        margin-right: 64px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        margin-right: $portfolio-examples-distances;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-end;
+        text-align: right;
 
         @media (max-width: 1066px) {
             margin-right: 24px;
@@ -197,6 +200,7 @@
 
         .portfolio__buttons {
             display: flex;
+            justify-content: flex-end;
             padding-top: 16px;
 
             .portfolio__buttons__live {
