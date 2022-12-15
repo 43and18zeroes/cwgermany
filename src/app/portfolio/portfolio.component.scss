@@ -1,6 +1,8 @@
 @import "../../styles/settings/_variables.scss";
 
 $portfolio-examples-distances: 100px;
+$portfolio-examples-distances-medium: 50px;
+$portfolio-examples-distances-small: 25px;
 
 .portfolio {
     display: flex;
@@ -47,23 +49,25 @@ $portfolio-examples-distances: 100px;
 
     .portfolio__examples__picleft__pic {
         width: 50%;
-        height: 339px;
+        min-height: 339px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-right: $portfolio-examples-distances;
 
-        @media (max-width: 1145px) {
-            img {
-                width: 300px;
-            }
-        }
-
-        @media (max-width: 1066px) {
-            margin-right: 48px;
+        @media (max-width: 1240px) {
+            margin-right: $portfolio-examples-distances-medium;
 
             img {
                 width: 290px;
+            }
+        }
+
+        @media (max-width: 1128px) {
+            margin-right: $portfolio-examples-distances-small;
+
+            img {
+                width: 250px;
             }
         }
     }
@@ -73,8 +77,12 @@ $portfolio-examples-distances: 100px;
         padding-top: 16px;
         margin-left: $portfolio-examples-distances;
 
-        @media (max-width: 1066px) {
-            margin-left: 24px;
+        @media (max-width: 1240px) {
+            margin-left: $portfolio-examples-distances-medium;
+        }
+
+        @media (max-width: 1128px) {
+            margin-left: $portfolio-examples-distances-small;
         }
 
         h3 {
@@ -147,23 +155,25 @@ $portfolio-examples-distances: 100px;
 
     .portfolio__examples__picright__pic {
         width: 50%;
-        height: 339px;
+        min-height: 339px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-left: $portfolio-examples-distances;
 
-        @media (max-width: 1145px) {
-            img {
-                width: 300px;
-            }
-        }
-
-        @media (max-width: 1066px) {
-            margin-left: 48px;
+        @media (max-width: 1240px) {
+            margin-left: $portfolio-examples-distances-medium;
 
             img {
                 width: 290px;
+            }
+        }
+
+        @media (max-width: 1128px) {
+            margin-left: $portfolio-examples-distances-small;
+
+            img {
+                width: 250px;
             }
         }
     }
@@ -177,8 +187,12 @@ $portfolio-examples-distances: 100px;
         // align-items: flex-end;
         text-align: right;
 
-        @media (max-width: 1066px) {
-            margin-right: 24px;
+        @media (max-width: 1240px) {
+            margin-right: $portfolio-examples-distances-medium;
+        }
+
+        @media (max-width: 1128px) {
+            margin-right: $portfolio-examples-distances-small;
         }
 
         h3 {
