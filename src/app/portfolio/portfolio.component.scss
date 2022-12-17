@@ -3,6 +3,7 @@
 $portfolio-examples-distances: 100px;
 $portfolio-examples-distances-medium: 50px;
 $portfolio-examples-distances-small: 25px;
+$portfolio-examples-large-extra-padding: 96px;
 
 .portfolio {
     display: flex;
@@ -58,17 +59,17 @@ $portfolio-examples-distances-small: 25px;
         @media (max-width: 1240px) {
             margin-right: $portfolio-examples-distances-medium;
 
-            img {
-                width: 290px;
-            }
+            // img {
+            //     width: 290px;
+            // }
         }
 
         @media (max-width: 1128px) {
             margin-right: $portfolio-examples-distances-small;
 
-            img {
-                width: 250px;
-            }
+            // img {
+            //     width: 250px;
+            // }
         }
     }
 
@@ -83,6 +84,10 @@ $portfolio-examples-distances-small: 25px;
 
         @media (max-width: 1128px) {
             margin-left: $portfolio-examples-distances-small;
+        }
+
+        @media (min-width: 1240px) {
+                margin-right: $portfolio-examples-large-extra-padding;
         }
 
         h3 {
@@ -133,7 +138,6 @@ $portfolio-examples-distances-small: 25px;
                 background-color: transparent;
                 transition: all 0.2s ease-in-out;
                 cursor: pointer;
-                margin-right: 64px;
 
                 &:hover {
                     background-color: $light-blue;
@@ -164,17 +168,17 @@ $portfolio-examples-distances-small: 25px;
         @media (max-width: 1240px) {
             margin-left: $portfolio-examples-distances-medium;
 
-            img {
-                width: 290px;
-            }
+            // img {
+            //     width: 290px;
+            // }
         }
 
         @media (max-width: 1128px) {
             margin-left: $portfolio-examples-distances-small;
 
-            img {
-                width: 250px;
-            }
+            // img {
+            //     width: 250px;
+            // }
         }
     }
 
@@ -194,6 +198,10 @@ $portfolio-examples-distances-small: 25px;
         @media (max-width: 1128px) {
             margin-right: $portfolio-examples-distances-small;
         }
+
+        @media (min-width: 1240px) {
+            margin-left: $portfolio-examples-large-extra-padding;
+    }
 
         h3 {
             font-size: 32px;
@@ -226,7 +234,6 @@ $portfolio-examples-distances-small: 25px;
                 background-color: $purple-accent;
                 transition: all 0.2s ease-in-out;
                 cursor: pointer;
-                margin-left: 64px;
 
                 &:hover {
                     background-color: $light-blue;
