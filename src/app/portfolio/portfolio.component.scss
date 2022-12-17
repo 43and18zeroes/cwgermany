@@ -87,7 +87,9 @@ $portfolio-examples-large-extra-padding: 96px;
         }
 
         @media (min-width: 1240px) {
-                margin-right: $portfolio-examples-large-extra-padding;
+                p {
+                    padding-right: $portfolio-examples-large-extra-padding;
+                }
         }
 
         h3 {
@@ -200,7 +202,9 @@ $portfolio-examples-large-extra-padding: 96px;
         }
 
         @media (min-width: 1240px) {
-            margin-left: $portfolio-examples-large-extra-padding;
+            p {
+                padding-left: $portfolio-examples-large-extra-padding;
+            }
     }
 
         h3 {
