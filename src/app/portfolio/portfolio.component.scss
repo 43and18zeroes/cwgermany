@@ -43,6 +43,12 @@ $portfolio-examples-large-extra-padding: 96px;
     }
 }
 
+.portfolio__examples {
+    img {
+        width: 400px;
+    }
+}
+
 .portfolio__examples__picleft {
     display: flex;
     justify-content: center;
@@ -58,18 +64,10 @@ $portfolio-examples-large-extra-padding: 96px;
 
         @media (max-width: 1240px) {
             margin-right: $portfolio-examples-distances-medium;
-
-            // img {
-            //     width: 290px;
-            // }
         }
 
         @media (max-width: 1128px) {
             margin-right: $portfolio-examples-distances-small;
-
-            // img {
-            //     width: 250px;
-            // }
         }
     }
 
@@ -169,18 +167,10 @@ $portfolio-examples-large-extra-padding: 96px;
 
         @media (max-width: 1240px) {
             margin-left: $portfolio-examples-distances-medium;
-
-            // img {
-            //     width: 290px;
-            // }
         }
 
         @media (max-width: 1128px) {
             margin-left: $portfolio-examples-distances-small;
-
-            // img {
-            //     width: 250px;
-            // }
         }
     }
 
