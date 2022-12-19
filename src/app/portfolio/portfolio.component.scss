@@ -46,6 +46,10 @@ $portfolio-examples-large-extra-padding: 96px;
 .portfolio__examples {
     img {
         width: 400px;
+
+        @media (max-width: 1240px) {
+            width: 350px;
+        }
     }
 }
 
@@ -178,9 +182,6 @@ $portfolio-examples-large-extra-padding: 96px;
         width: 50%;
         padding-top: 16px;
         margin-right: $portfolio-examples-distances;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: flex-end;
         text-align: right;
 
         @media (max-width: 1240px) {
