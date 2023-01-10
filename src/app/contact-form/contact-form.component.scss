@@ -1,0 +1,22 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.contact__content {
+    display: flex;
+}
+
+.contact__content__text {
+    width: 50%;
+}
+
+.contact__content__form {
+    width: 50%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
