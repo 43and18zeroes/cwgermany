@@ -1,3 +1,5 @@
+@import "../../styles/settings/_variables.scss";
+
 .contact {
     display: flex;
     justify-content: center;
@@ -6,6 +8,21 @@
 
 .contact__content {
     display: flex;
+}
+
+hr {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    border: 0;
+    border-top: 8px solid $purple-accent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -60px;
+
+    @media (max-width: 1700px) {
+        width: 50px;
+    }
 }
 
 .contact__content__text {
