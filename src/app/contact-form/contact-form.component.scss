@@ -32,6 +32,10 @@ hr {
     h3 {
         font-size: 38px;
     }
+
+    @media (max-width: 1500px) {
+        padding-right: 100px;
+    }
 }
 
 .contact__content__form {
