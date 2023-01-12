@@ -81,3 +81,13 @@ hr {
     display: flex;
     justify-content: center;
 }
+
+.arrowup__container {
+    text-align: right;
+    margin: 100px 0;
+
+    span {
+        font-size: 60px;
+        cursor: pointer;
+    }
+}

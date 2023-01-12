@@ -6,9 +6,20 @@
     src: url("assets/fonts/poppins/Poppins-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/material-design-icons/MaterialIconsRound-Regular.otf") format("truetype");
+}
+
+.material-symbols-rounded {
+    font-family: 'Material Icons';
+}
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     margin: 0;
@@ -50,7 +61,7 @@ p {
     cursor: pointer;
 
     &:hover {
-        transform: scale(1.1); 
+        transform: scale(1.1);
         background-color: $purple-accent;
     }
 }
