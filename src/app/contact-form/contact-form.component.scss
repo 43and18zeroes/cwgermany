@@ -80,6 +80,12 @@ hr {
 .form__btn__div {
     display: flex;
     justify-content: center;
+
+    button {
+        &:hover {
+            font-size: 24.1px;
+        }
+    }
 }
 
 .arrowup__container {
