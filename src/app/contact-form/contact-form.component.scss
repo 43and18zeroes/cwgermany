@@ -89,5 +89,9 @@ hr {
     span {
         font-size: 60px;
         cursor: pointer;
+
+        &:hover {
+            color: $light-blue;
+        }
     }
 }
