@@ -28,10 +28,14 @@ export class ContactFormComponent implements OnInit {
     messageField.disabled = true;
     sendButton.disabled = true;
 
+    console.log('name', this.messageField);
+    console.log('mail', this.mailField);
+    console.log('message', this.messageField);
+
     // Todo: Animation anzeigen
     let fd = new FormData();
     fd.append('name', nameField.value);
-    fd.append('name', mailField.value);
+    fd.append('mail', mailField.value);
     fd.append('message', messageField.value);
 
     await fetch('https://cwgermany.de/send_mail/send_mail.php',
