@@ -84,14 +84,22 @@ hr {
 
 .arrowup__container {
     text-align: right;
-    margin: 100px 0;
+    padding: 100px 0;
 
-    span {
+    a {
+        color: white;
         font-size: 60px;
+        text-decoration: none;
         cursor: pointer;
 
         &:hover {
             color: $light-blue;
         }
     }
+}
+
+.contactform__bgcloud {
+    position: absolute;
+    left: 0;
+    z-index: -10;
 }

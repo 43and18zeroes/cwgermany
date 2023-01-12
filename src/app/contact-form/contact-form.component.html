@@ -9,7 +9,8 @@
 
             <div class="contact__content__text">
                 <h3>Got a problem to solve?</h3>
-                <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
+                <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
+                    your projects with my work.
                 </p>
                 <p>Need a Front-End developer? <b>Contact me!</b>
                 </p>
@@ -20,7 +21,8 @@
                 <form (submit)="sendMail()" ngNativeValidate #myForm>
                     <input class="textfields" required type="text" name="name" #nameField placeholder="Your name">
                     <input class="textfields" required type="email" name="mail" #mailField placeholder="Your email">
-                    <textarea class="textfields textarea" required type="text" name="message" #messageField placeholder="Your message"></textarea>
+                    <textarea class="textfields textarea" required type="text" name="message" #messageField
+                        placeholder="Your message"></textarea>
                     <div class="form__btn__div">
                         <button class="btn__lightblue" #sendButton>Send message :)</button>
                     </div>
@@ -31,9 +33,10 @@
         </div>
 
         <div class="arrowup__container">
-            <span class="material-symbols-rounded">
-                arrow_circle_up
-                </span>
+            <a href="#"><span class="material-symbols-rounded">
+                    arrow_circle_up
+                </span></a>
         </div>
     </div>
+    <img class="contactform__bgcloud" src="assets/img/contact-form/contact-form-bgcloud.png" alt="">
 </section>
