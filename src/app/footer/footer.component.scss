@@ -1,1 +1,40 @@
 @import "../../styles/settings/_variables.scss";
+
+footer {
+    border-top: 4px solid $light-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.footer__content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    font-size: 28px;
+    font-weight: 900;
+    width: 250px;
+}
+
+.footer__copyright {
+    font-size: 23px;
+}
+
+.footer__links {
+    width: 250px;
+    text-align: right;
+
+    a {
+        margin-left: 42px;
+    }
+}
