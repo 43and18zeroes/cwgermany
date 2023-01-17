@@ -4,8 +4,6 @@ footer {
     border-top: 4px solid $light-blue;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 100px 0;
     background-color: $dark-blue-bg;
     z-index: 10;
@@ -16,24 +14,27 @@ footer {
     }
 }
 
-.footer__content1 {
+.footer__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.footer__left {
+    width: 216px;
 }
 
 .footer__logo {
     font-size: 28px;
     font-weight: 900;
-    width: 250px;
 }
 
-.footer__copyright {
+.footer__center {
     font-size: 23px;
 }
 
-.footer__links {
-    width: 250px;
+.footer_right {
+    width: 216px;
     text-align: right;
 
     a {
