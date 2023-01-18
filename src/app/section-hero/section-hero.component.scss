@@ -117,6 +117,21 @@
 
     a {
         margin-left: 36px;
+        transition: all .125s;
+
+        img {
+            width: 30px;
+        }
+
+        &:hover {
+            transform: scale(1.33);
+        }
+    }
+
+    a:last-child {
+        &:hover {
+            transform: scale(1);
+        }
     }
 }
 
