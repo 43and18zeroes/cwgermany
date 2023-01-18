@@ -99,6 +99,7 @@ hr {
         font-size: 60px;
         text-decoration: none;
         cursor: pointer;
+        transition: all .125s ease-in-out;
 
         &:hover {
             color: $light-blue;
