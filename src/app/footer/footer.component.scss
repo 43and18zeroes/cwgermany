@@ -39,5 +39,14 @@ footer {
 
     a {
         margin-left: 42px;
+
+        img {
+            width: 30px;
+            transition: all .175s ease-in-out;
+
+            &:hover {
+                transform: scale(1.33);
+            }
+        }
     }
 }
