@@ -7,7 +7,7 @@ footer {
     padding: 100px 0;
     background-color: $dark-blue-bg;
     z-index: 10;
-    
+
     a {
         text-decoration: none;
         color: white;
@@ -22,6 +22,30 @@ footer {
 
 .footer__left {
     width: 216px;
+}
+
+.footer__impressum {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.footer__impressum::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $light-blue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.footer__impressum:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .footer__logo {
