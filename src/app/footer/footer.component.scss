@@ -24,13 +24,13 @@ footer {
     width: 216px;
 }
 
-.footer__impressum {
+.footer__imprint {
     display: inline-block;
     position: relative;
     color: #0087ca;
 }
 
-.footer__impressum::after {
+.footer__imprint::after {
     content: '';
     position: absolute;
     width: 60%;
@@ -43,7 +43,7 @@ footer {
     transition: transform 0.25s ease-out;
 }
 
-.footer__impressum:hover::after {
+.footer__imprint:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
