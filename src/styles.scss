@@ -66,3 +66,15 @@ p {
         background-color: $purple-accent;
     }
 }
+
+@media (max-width: 992px) {
+    .hidden__mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .hidden__desktop {
+        display: none;
+    }
+}
