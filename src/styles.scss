@@ -32,6 +32,9 @@ body {
 .container {
     width: 1440px;
     padding: 0 $padding-container;
+    @media (max-width: 992px) {
+        padding: 0 25px;
+    }
 }
 
 h2 {
