@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Material Icons Rounded";
+  font-style: normal;
+  font-weight: 200;
+  src: url("assets/fonts/material-design-icons/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2");
+}
+.material-symbols-rounded {
+  font-family: "Material Icons Rounded";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  color: white;
+  background-color: rgb(20, 29, 47);
+  font-weight: 400;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 100px;
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+h2 {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 108px;
+  display: inline;
+}
+@media (max-width: 1150px) {
+  h2 {
+    font-size: 72px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.btn__lightblue {
+  padding: 15px 30px;
+  background-color: #00BEE8;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 23px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn__lightblue:hover {
+  transform: scale(1.1);
+  background-color: #4B47FF;
+}
+
+@media (max-width: 992px) {
+  .hidden__mobile {
+    display: none;
+  }
+}
+@media (min-width: 993px) {
+  .hidden__desktop {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+.imprint {
+  display: flex;
+  justify-content: center;
+}
+
+.imprint__content {
+  margin-top: 106px;
+  padding-bottom: 100px;
+}
+.imprint__content h1 {
+  font-size: 50px;
+}
+.imprint__content h2 {
+  font-size: 30px;
+}
+.imprint__content a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=imprint.component.css.map */
