@@ -81,7 +81,7 @@ header {
     opacity: 0;
 }
 
-.mobile-nav {
+.mobile__nav {
     position: fixed;
     top: 0;
     left: 100%;
@@ -94,11 +94,11 @@ header {
     transition: 0.1s;
 }
 
-.mobile-nav.is-active {
+.mobile__nav.is-active {
     left: 0;
 }
 
-.mobile-nav a {
+.mobile__nav a {
     display: block;
     width: 100%;
     max-width: 200px;
@@ -111,6 +111,6 @@ header {
     text-decoration: none;
 }
 
-.mobile-nav a:hover {
+.mobile__nav a:hover {
     background-color: red;
 }
