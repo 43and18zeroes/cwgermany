@@ -53,7 +53,7 @@ header {
     background: none;
     outline: none;
     border: none;
-    z-index: 99999999999;
+
 }
 
 .hamburger .bar,
@@ -87,7 +87,7 @@ header {
     width: 100%;
     min-height: 100vh;
     display: block;
-    z-index: 9999999999;
+    z-index: 999999999;
     background-color: rgba(20, 29, 47, 0.5);
     padding-top: 120px;
     transition: 0.1s;
