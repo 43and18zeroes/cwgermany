@@ -15,8 +15,8 @@ export class MenuComponent implements OnInit {
     const mobile_menu = document.querySelector('.mobile__nav');
 
     menu_btn.addEventListener('click', function () {
-      menu_btn.classList.toggle('is-active');
-      mobile_menu.classList.toggle('is-active');
+      menu_btn.classList.toggle('is__active');
+      mobile_menu.classList.toggle('is__active');
     });
   }
 

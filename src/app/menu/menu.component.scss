@@ -69,15 +69,15 @@ header {
     transition: 0.1s;
 }
 
-.hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
+.hamburger.is__active:before {
+    transform: rotate(-45deg) translate(-10px, 10px);
 }
 
-.hamburger.is-active:after {
-    transform: rotate(45deg) translate(-9.5px, -7.5px);
+.hamburger.is__active:after {
+    transform: rotate(45deg) translate(-9.5px, -9.5px);
 }
 
-.hamburger.is-active .bar {
+.hamburger.is__active .bar {
     opacity: 0;
 }
 
@@ -94,7 +94,7 @@ header {
     transition: 0.1s;
 }
 
-.mobile__nav.is-active {
+.mobile__nav.is__active {
     left: 0;
 }
 
