@@ -74,3 +74,20 @@ footer {
         }
     }
 }
+
+.imprint__popup {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 999999999;
+    background-color: rgba(20, 29, 47, 0.9);
+    padding-top: 240px;
+    transition: 0.1s;
+}
+
+.imprint__popup.is__active {
+    right: 0;
+}

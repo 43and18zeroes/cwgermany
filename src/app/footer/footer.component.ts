@@ -10,6 +10,13 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    const imprint__btn = document.querySelector('.imprint__btn');
+    const imprint__popup = document.querySelector('.imprint__popup');
+
+    imprint__btn.addEventListener('click', function () {
+      imprint__popup.classList.toggle('is__active');
+    });
   }
 
 }
