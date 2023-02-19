@@ -12,4 +12,12 @@ export class SectionHeroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  aboutMe() {
+    document.getElementById("aboutMe").scrollIntoView();
+  }
+
+  contact() {
+    document.getElementById("contact").scrollIntoView();
+  }
+
 }

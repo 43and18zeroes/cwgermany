@@ -52,4 +52,8 @@ export class ContactFormComponent implements OnInit {
     sendButton.disabled = false;
   }
 
+  sectionHero() {
+    document.getElementById("sectionHero").scrollIntoView();
+  }
+
 }
