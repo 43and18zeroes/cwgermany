@@ -1,12 +1,12 @@
 <header>
     <div class="container header__container">
-        <a class="header__logo" routerLink="/">Christoph</a>
+        <a class="header__logo" routerLink="/" (click)="sectionHero()">Christoph</a>
 
         <div class="header__links hidden__mobile">
-            <a href="#aboutMe">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a (click)="aboutMe()">About me</a>
+            <a (click)="skills()">Skills</a>
+            <a (click)="portfolio()">Portfolio</a>
+            <a (click)="contact()">Contact</a>
         </div>
         <div class="header__links hidden__desktop">
             <button class="hamburger">
@@ -16,8 +16,8 @@
     </div>
 </header>
 <nav class="mobile__nav">
-    <a href="#aboutMe">About me</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <a (click)="aboutMe()">About me</a>
+    <a (click)="skills()">Skills</a>
+    <a (click)="portfolio()">Portfolio</a>
+    <a (click)="contact()">Contact</a>
 </nav>

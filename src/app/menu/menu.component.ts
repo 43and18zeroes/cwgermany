@@ -20,4 +20,24 @@ export class MenuComponent implements OnInit {
     });
   }
 
+  sectionHero() {
+    document.getElementById("sectionHero").scrollIntoView();
+  }
+
+  aboutMe() {
+    document.getElementById("aboutMe").scrollIntoView();
+  }
+
+  skills() {
+    document.getElementById("skills").scrollIntoView();
+  }
+
+  portfolio() {
+    document.getElementById("portfolio").scrollIntoView();
+  }
+
+  contact() {
+    document.getElementById("contact").scrollIntoView();
+  }
+
 }
