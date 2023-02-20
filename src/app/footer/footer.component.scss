@@ -81,13 +81,29 @@ footer {
     right: 100%;
     width: 100%;
     min-height: 100vh;
-    display: block;
-    z-index: 999999999;
-    background-color: rgba(20, 29, 47, 0.9);
+    display: flex;
+    justify-content: center;
+    z-index: 9999999999;
+    background-color: rgba(20, 29, 47, 0.95);
     padding-top: 240px;
     transition: 0.1s;
 }
 
 .imprint__popup.is__active {
     right: 0;
+}
+
+.imprint__content {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
