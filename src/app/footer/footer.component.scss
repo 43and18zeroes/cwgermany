@@ -53,6 +53,25 @@ footer {
     font-weight: 900;
 }
 
+.imprint__btn {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+
+    font-family: inherit;
+    color: inherit;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    padding: 0;
+    padding-left: 35px;
+}
+
 .footer__center {
     font-size: 23px;
 }
@@ -86,7 +105,7 @@ footer {
     z-index: 9999999999;
     background-color: rgba(20, 29, 47, 0.95);
     padding-top: 240px;
-    transition: 0.1s;
+    transition: 0.2s ease-in-out;
 }
 
 .imprint__popup.is__active {
