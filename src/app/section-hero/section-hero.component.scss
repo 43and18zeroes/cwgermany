@@ -22,6 +22,10 @@
     flex: 1;
     align-items: flex-start;
     margin-top: $header-height;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+      }
 }
 
 .hero__picture {
