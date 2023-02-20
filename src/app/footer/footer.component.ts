@@ -19,4 +19,8 @@ export class FooterComponent implements OnInit {
     });
   }
 
+  closeImprint() {
+    document.querySelector('.imprint__popup').classList.remove('is__active');
+  }
+
 }

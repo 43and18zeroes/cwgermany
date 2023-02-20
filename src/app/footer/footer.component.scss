@@ -107,3 +107,50 @@ footer {
         text-decoration: none;
     }
 }
+
+.imprint__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imprint__close {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+
+    color: inherit;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    padding: 0;
+    padding-left: 35px;
+}
+
+.imprint__close .imprint__close__bar,
+.imprint__close:after,
+.imprint__close:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    margin: 12px 0px;
+    transition: 0.1s;
+}
+
+.imprint__close:before {
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.imprint__close:after {
+    transform: rotate(45deg) translate(-9.5px, -9.5px);
+}
+
+.imprint__close .imprint__close__bar {
+    opacity: 0;
+}
