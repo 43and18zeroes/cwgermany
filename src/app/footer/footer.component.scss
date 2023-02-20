@@ -54,7 +54,9 @@ footer {
 }
 
 .imprint__btn {
-    display: block;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
     cursor: pointer;
     font-family: inherit;
     color: inherit;
@@ -62,6 +64,24 @@ footer {
     background: none;
     border: none;
     padding: 0;
+}
+
+.imprint__btn::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $light-blue;
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-out;
+}
+
+.imprint__btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .footer__center {
@@ -151,7 +171,7 @@ footer {
     height: 2px;
     background-color: #FFF;
     margin: 12px 0px;
-    transition: 0.1s;
+    transition: transform 0.15s ease-out;
 }
 
 .imprint__close:before {
