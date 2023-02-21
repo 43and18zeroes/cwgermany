@@ -25,24 +25,40 @@
 
     @media (max-width: 992px) {
         flex-direction: column;
-      }
+    }
 }
 
 .hero__picture {
     position: relative;
     height: 705px;
     flex: 1;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .bgfog__1 {
     position: absolute;
     height: 548px;
+
+    @media (max-width: 610px) {
+        height: 450px;
+        margin-right: -3%;
+    }
 }
 
 .photo__portrait {
     position: absolute;
     top: 0;
     z-index: 100;
+
+    @media (max-width: 610px) {
+        height: 450px;
+        margin-right: -3%;
+    }
 }
 
 .hero__text {
