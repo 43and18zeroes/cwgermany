@@ -95,7 +95,7 @@
 @media (max-width: 992px) {
     .hero__text__mobile {
         padding-top: 77vh;
-        padding-bottom: 200px;
+        padding-bottom: 70px;
 
         a {
             margin-top: 64px;
@@ -266,6 +266,7 @@
 
         @media (max-width: 992px) {
             width: 66px;
+            margin-top: 16px;
         }
 
         @media (max-width: 416px) {
@@ -282,12 +283,28 @@
 .hero__contact {
     display: flex;
 
+    @media (max-width: 992px) {
+        padding-left: 30px;
+    }
+
     a {
         margin-left: 36px;
         transition: all .175s ease-in-out;
 
+        @media (max-width: 992px) {
+            margin-left: 50px;
+        }
+
+        @media (max-width: 416px) {
+            margin-left: 36px;
+        }
+
         img {
             width: 30px;
+
+            @media (max-width: 992px) {
+                width: 40px;
+            }
         }
 
         &:hover {
