@@ -3,22 +3,36 @@
 .skills {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 200px;
 
     @media (max-width: 1555px) {
         padding-bottom: 100px;
     }
+
+    @media (max-width: 762px) {
+        padding-bottom: 50px;
+    }
 }
 
 .skills__content {
     display: flex;
+
+    @media (max-width: 762px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .skills__logos {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+
+    @media (max-width: 762px) {
+        justify-content: space-between;
+        margin: 0 -10px;
+        padding-top: 20px;
+    }
 
     .skills__logo {
         width: 160px;
@@ -35,6 +49,15 @@
             width: 115px;
             height: 115px;
         }
+
+        @media (max-width: 762px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 420px) {
+            width: 90px;
+        }
+
     }
 
     img {
@@ -46,6 +69,10 @@
 
         @media (max-width: 1145px) {
             height: 74px;
+        }
+
+        @media (max-width: 762px) {
+            height: 100px;
         }
     }
 }
@@ -63,9 +90,23 @@
         margin-right: 0;
     }
 
+    @media (max-width: 762px) {
+        margin-left: auto;
+    }
+
+    @media (max-width: 420px) {
+        width: 100%;
+    }
+
 
     .skills__h2 {
         text-align: right;
+
+        h2 {
+            @media (max-width: 762px) {
+                font-size: 54px;
+            }
+        }
     }
 
     hr {
@@ -80,6 +121,10 @@
 
         @media (max-width: 1145px) {
             width: 50px;
+        }
+
+        @media (max-width: 992px) {
+            width: 15px;
         }
     }
 
@@ -99,8 +144,28 @@
     // }
 }
 
+.skills__btn__desktop {
+    @media (max-width: 762px) {
+        display: none;
+    }
+}
+
+.skills__btn__mobile {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 763px) {
+        display: none;
+    }
+}
+
 .skills__bgfog {
     position: absolute;
     left: 0;
     z-index: -10;
+
+    @media (max-width: 762px) {
+        width: 200px;
+        margin-bottom: 350px;
+    }
 }
