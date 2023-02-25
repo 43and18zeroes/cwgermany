@@ -114,7 +114,7 @@ h4 {
     align-items: center;
     padding-top: 100px;
 
-    @media (max-width: 922px) {
+    @media (max-width: 992px) {
         flex-direction: column;
     }
 
@@ -134,7 +134,7 @@ h4 {
             margin-right: $portfolio-examples-distances-small;
         }
 
-        @media (max-width: 922px) {
+        @media (max-width: 992px) {
             width: 100%;
             justify-content: center;
             margin-right: 0;
@@ -161,24 +161,11 @@ h4 {
             }
         }
 
-        @media (max-width: 922px) {
-            width: 100%;
-            align-items: center;
-            margin-left: 0;
-            max-width: 500px;
-
-            h3,
-            h4,
-            p {
-                text-align: center;
-            }
-        }
-
         .portfolio__buttons {
             display: flex;
             padding-top: 16px;
 
-            @media (max-width: 922px) {
+            @media (max-width: 992px) {
                 justify-content: center;
             }
 
@@ -249,38 +236,51 @@ h4 {
 
 
 .portfolio__all__images {
-    @media (max-width: 922px) {
-    
-
+    @media (max-width: 992px) {
         img {
             width: 500px;
         }
-        
-
     }
 
     @media (max-width: 564px) {
-
         img {
             width: 450px;
         }
-
     }
 
     @media (max-width: 514px) {
-
         img {
             width: 400px;
         }
-
     }
 
     @media (max-width: 460px) {
-
         img {
             width: 300px;
         }
+    }
+}
 
+.portfolio__all__texts {
+    @media (max-width: 992px) {
+        width: 100%;
+        align-items: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: 500px;
+
+        h3,
+        h4,
+        p {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 400px) {
+        
+        h4 {
+            font-size: 20px;
+        }
     }
 }
 
