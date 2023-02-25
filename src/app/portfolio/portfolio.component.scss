@@ -77,6 +77,13 @@ h4 {
         padding: 0 32px;
     }
 
+    h2 {
+        @media (max-width: 762px) {
+            font-size: 54px;
+            padding: 0 16px;
+        }
+    }
+
     hr {
         position: absolute;
         right: 0;
@@ -90,6 +97,16 @@ h4 {
         @media (max-width: 1145px) {
             width: 80%;
             margin-top: 110px;
+        }
+
+        @media (max-width: 762px) {
+            width: 90%;
+            margin-top: 96px;
+        }
+
+        @media (max-width: 420px) {
+            width: 95%;
+            margin-top: 96px;
         }
     }
 
@@ -116,6 +133,7 @@ h4 {
 
     @media (max-width: 992px) {
         flex-direction: column;
+        padding-top: 75px;
     }
 
     .portfolio__examples__picleft__pic {
@@ -187,6 +205,7 @@ h4 {
 
     @media (max-width: 992px) {
         flex-direction: column-reverse;
+        padding-top: 75px;
     }
 
     .portfolio__examples__picright__pic {
@@ -235,7 +254,8 @@ h4 {
 
         @media (max-width: 992px) {
             width: 100%;
-            
+            align-self: center;
+
             p {
                 text-align: center !important;
             }
