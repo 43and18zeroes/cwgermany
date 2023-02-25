@@ -111,7 +111,12 @@ h4 {
 .portfolio__examples__picleft {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 100px;
+
+    @media (max-width: 922px) {
+        flex-direction: column;
+    }
 
     .portfolio__examples__picleft__pic {
         width: 50%;
@@ -127,6 +132,35 @@ h4 {
 
         @media (max-width: 1128px) {
             margin-right: $portfolio-examples-distances-small;
+        }
+
+        @media (max-width: 922px) {
+            width: 100%;
+            justify-content: center;
+            margin-right: 0;
+            min-height: auto;
+
+            img {
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 564px) {
+            img {
+                width: 450px;
+            }
+        }
+
+        @media (max-width: 514px) {
+            img {
+                width: 400px;
+            }
+        }
+
+        @media (max-width: 460px) {
+            img {
+                width: 300px;
+            }
         }
     }
 
@@ -149,9 +183,24 @@ h4 {
                 }
         }
 
+        @media (max-width: 922px) {
+            width: 100%;
+            align-items: center;
+            margin-left: 0;
+            max-width: 500px;
+
+            h3, h4, p {
+                text-align: center;
+            }
+        }
+
         .portfolio__buttons {
             display: flex;
             padding-top: 16px;
+
+            @media (max-width: 922px) {
+                justify-content: center;
+            }
 
             .portfolio__buttons__live {
                 margin-right: 64px;
