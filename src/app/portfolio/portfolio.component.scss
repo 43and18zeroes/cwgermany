@@ -161,6 +161,10 @@ h4 {
             }
         }
 
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
         .portfolio__buttons {
             display: flex;
             padding-top: 16px;
@@ -181,6 +185,10 @@ h4 {
     justify-content: center;
     padding-top: 100px;
 
+    @media (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
+
     .portfolio__examples__picright__pic {
         width: 50%;
         min-height: 339px;
@@ -195,6 +203,13 @@ h4 {
 
         @media (max-width: 1128px) {
             margin-left: $portfolio-examples-distances-small;
+        }
+
+        @media (max-width: 992px) {
+            width: 100%;
+            justify-content: center;
+            margin-right: 0;
+            min-height: auto;
         }
     }
 
@@ -218,6 +233,14 @@ h4 {
             }
         }
 
+        @media (max-width: 992px) {
+            width: 100%;
+            
+            p {
+                text-align: center !important;
+            }
+        }
+
         p {
             text-align: right;
         }
@@ -226,6 +249,10 @@ h4 {
             display: flex;
             justify-content: flex-end;
             padding-top: 16px;
+
+            @media (max-width: 992px) {
+                justify-content: center;
+            }
 
             .portfolio__buttons__github {
                 margin-left: 64px;
@@ -237,6 +264,8 @@ h4 {
 
 .portfolio__all__images {
     @media (max-width: 992px) {
+        margin: 0 !important;
+
         img {
             width: 500px;
         }
