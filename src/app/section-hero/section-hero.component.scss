@@ -371,43 +371,35 @@
     margin-top: -380px;
     width: 100%;
     z-index: 100;
-    // top: 100vh;
     right: 0;
     left: 0;
     width: 100%;
 
     @media (max-width: 1980px) {
-        // top: 110vh;
         top: 950px;
     }
 
     @media (min-width: 1981px) {
-        // top: 110vh;
         top: 900px;
     }
 
     @media (min-width: 2368px) {
-        // top: 110vh;
         top: 850px;
     }
 
     @media (min-width: 2778px) {
-        // top: 110vh;
         top: 775px;
     }
 
     @media (min-width: 3420px) {
-        // top: 110vh;
         top: 725px;
     }
 
     @media (max-width: 1350px) {
-        // top: 115vh;
         top: 1025px;
     }
 
     @media (max-width: 992px) {
-        // top: 115vh;
         top: 1070px;
     }
 
@@ -416,12 +408,18 @@
     }
 
     @media (max-width: 610px) {
-        // top: 92vh;
         top: 860px;
     }
 
     @media (max-width: 420px) {
-        // top: 95vh;
         top: 885px;
+    }
+
+    @media (max-width: 430px) {
+        top: 840px;
+    }
+
+    @media (max-width: 393px) {
+        top: 810px;
     }
 }
