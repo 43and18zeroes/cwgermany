@@ -43,7 +43,18 @@
 
     @media (max-width: 610px) {
         height: 450px;
-        margin-right: -3%;
+    }
+
+    @media (max-width: 495px) {
+        height: 400px;
+    }
+
+    @media (max-width: 442px) {
+        height: 350px;
+    }
+
+    @media (max-width: 393px) {
+        height: 320px;
     }
 }
 
@@ -52,9 +63,20 @@
     top: 0;
     z-index: 100;
 
+    @media (max-width: 663px) {
+        height: 640px;
+    }
+
     @media (max-width: 610px) {
         height: 450px;
-        margin-right: -3%;
+    }
+
+    @media (max-width: 430px) {
+        height: 410px;
+    }
+
+    @media (max-width: 393px) {
+        height: 370px;
     }
 }
 
@@ -387,6 +409,10 @@
     @media (max-width: 992px) {
         // top: 115vh;
         top: 1070px;
+    }
+
+    @media (max-width: 663px) {
+        top: 1046px;
     }
 
     @media (max-width: 610px) {

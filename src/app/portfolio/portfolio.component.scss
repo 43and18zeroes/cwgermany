@@ -291,25 +291,31 @@ h4 {
         margin: 0 !important;
 
         img {
-            width: 500px;
+            width: 490px;
         }
     }
 
     @media (max-width: 564px) {
         img {
-            width: 450px;
+            width: 445px;
         }
     }
 
     @media (max-width: 514px) {
         img {
-            width: 400px;
+            width: 390px;
         }
     }
 
     @media (max-width: 460px) {
         img {
             width: 300px;
+        }
+    }
+
+    @media (max-width: 410px) {
+        img {
+            width: 280px;
         }
     }
 }
@@ -336,7 +342,7 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 406px) {
     .portfolio__all__buttons {
         margin: 0 10px !important;
         font-size: 18px;
