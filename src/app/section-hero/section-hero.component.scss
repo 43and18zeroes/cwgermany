@@ -8,7 +8,6 @@
 }
 
 .hero__flex {
-    // height: 100vh;
     height: 930px;
     display: flex;
     flex-direction: column;
@@ -22,6 +21,10 @@
 
     @media (max-width: 992px) {
         flex-direction: column;
+    }
+
+    @media (max-width: 416px) {
+        flex: none;
     }
 }
 
@@ -113,7 +116,7 @@
 
 @media (max-width: 992px) {
     .hero__text__mobile {
-        padding-top: 77vh;
+        padding-top: 725px;
         padding-bottom: 70px;
 
         a {
@@ -140,7 +143,7 @@
 
 @media (max-width: 672px) {
     .hero__text__mobile {
-        padding-top: 75vh;
+        padding-top: 700px;
 
         a {
             margin-top: 64px;
@@ -165,7 +168,7 @@
 
 @media (max-width: 610px) {
     .hero__text__mobile {
-        padding-top: 50vh;
+        padding-top: 470px;
 
         a {
             margin-top: 64px;
@@ -189,7 +192,7 @@
 
 @media (max-width: 486px) {
     .hero__text__mobile {
-        padding-top: 50vh;
+        padding-top: 400px;
 
         a {
             margin-top: 64px;
@@ -215,7 +218,8 @@
 
 @media (max-width: 416px) {
     .hero__text__mobile {
-        padding-top: 50vh;
+
+        padding-top: 430px;
 
         a {
             margin-top: 64px;
