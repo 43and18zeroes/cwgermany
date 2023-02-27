@@ -4,7 +4,7 @@
 
         <div class="footer__left footer__hidden__mobile">
             <a class="footer__logo" href="#sectionHero">Christoph</a><br>
-            <button class="imprint__btn">
+            <button class="imprint__btn" (click)="displayImprint()">
                 <span>Impressum</span>
             </button>
         </div>
@@ -48,7 +48,7 @@
             <div class="container imprint__content">
                 <div class="imprint__header">
                     <h1>Impressum</h1>
-                    <button (click)="closeImprint()" class="imprint__close">
+                    <button (click)="hideImprint()" class="imprint__close noSelect">
                         <span class="imprint__close__bar"></span>
                     </button>
                 </div>

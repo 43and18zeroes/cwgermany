@@ -1,6 +1,6 @@
 <header>
     <div class="container header__container">
-        <a class="header__logo" routerLink="/" (click)="sectionHero()">Christoph</a>
+        <a class="header__logo noSelect" routerLink="/" (click)="sectionHero()">Christoph</a>
 
         <div class="header__links hidden__mobile">
             <a (click)="aboutMe()">About me</a>
@@ -8,14 +8,14 @@
             <a (click)="portfolio()">Portfolio</a>
             <a (click)="contact()">Contact</a>
         </div>
-        <div class="header__links hidden__desktop">
+        <div class="header__links hidden__desktop noSelect">
             <button class="hamburger">
                 <span _ngcontent-bub-c53="" class="bar"></span>
             </button>
         </div>
     </div>
 </header>
-<nav class="mobile__nav">
+<nav class="mobile__nav noSelect">
     <a (click)="aboutMe(); toggleMobileNav()">About me</a>
     <a (click)="skills(); toggleMobileNav()">Skills</a>
     <a (click)="portfolio(); toggleMobileNav()">Portfolio</a>
