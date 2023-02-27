@@ -334,14 +334,18 @@
             }
         }
 
-        &:hover {
-            transform: scale(1.33);
+        @media (hover: hover) {
+            &:hover {
+                transform: scale(1.33);
+            }
         }
     }
 
-    a:last-child {
-        &:hover {
-            transform: scale(1);
+    @media (hover: hover) {
+        a:last-child {
+            &:hover {
+                transform: scale(1);
+            }
         }
     }
 }

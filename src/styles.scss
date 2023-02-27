@@ -32,6 +32,7 @@ body {
 .container {
     width: 1440px;
     padding: 0 $padding-container;
+
     @media (max-width: 992px) {
         padding: 0 25px;
     }
@@ -68,9 +69,11 @@ p {
     cursor: pointer;
     text-decoration: none;
 
-    &:hover {
-        transform: scale(1.1);
-        background-color: $purple-accent;
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.1);
+            background-color: $purple-accent;
+        }
     }
 }
 
@@ -95,6 +98,7 @@ p {
     -ms-user-select: none;
     user-select: none;
 }
+
 .noSelect:focus {
     outline: none !important;
 }

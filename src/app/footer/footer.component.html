@@ -1,9 +1,9 @@
-<footer id="footer">
+<footer id="footer" class="noSelect">
 
     <div class="footer__content container">
 
         <div class="footer__left footer__hidden__mobile">
-            <a class="footer__logo" href="#sectionHero">Christoph</a><br>
+            <a class="footer__logo" (click)="sectionHero()">Christoph</a><br>
             <button class="imprint__btn" (click)="displayImprint()">
                 <span>Impressum</span>
             </button>
@@ -14,15 +14,15 @@
         </div>
 
         <div class="footer__right footer__hidden__mobile">
-            <a href="https://github.com/43and18zeroes"><img src="assets/img/hero_btns/hero-github.png" alt=""></a>
-            <a href="mailto: christoph@cwgermany.de"><img src="assets/img/hero_btns/hero-mail.png" alt=""></a>
-            <a href="#"><img src="assets/img/hero_btns/hero-linkedin.png" alt=""></a>
+            <a target="_blank" href="https://github.com/43and18zeroes"><img src="assets/img/hero_btns/hero-github.png" alt=""></a>
+            <a target="_blank" href="mailto: christoph@cwgermany.de"><img src="assets/img/hero_btns/hero-mail.png" alt=""></a>
+            <a target="_blank" href="#"><img src="assets/img/hero_btns/hero-linkedin.png" alt=""></a>
         </div>
 
 
         <div class="footer__mobile">
             <div class="footer__left">
-                <a class="footer__logo" href="#sectionHero">Christoph</a>
+                <a class="footer__logo" (click)="sectionHero()">Christoph</a>
             </div>
 
             <div class="footer__center">
@@ -30,9 +30,9 @@
             </div>
 
             <div class="footer__right">
-                <a href="https://github.com/43and18zeroes"><img src="assets/img/hero_btns/hero-github.png" alt=""></a>
-                <a href="mailto: christoph@cwgermany.de"><img src="assets/img/hero_btns/hero-mail.png" alt=""></a>
-                <a href="#"><img src="assets/img/hero_btns/hero-linkedin.png" alt=""></a>
+                <a target="_blank" href="https://github.com/43and18zeroes"><img src="assets/img/hero_btns/hero-github.png" alt=""></a>
+                <a target="_blank" href="mailto: christoph@cwgermany.de"><img src="assets/img/hero_btns/hero-mail.png" alt=""></a>
+                <a target="_blank" href="#"><img src="assets/img/hero_btns/hero-linkedin.png" alt=""></a>
             </div>
 
             <div  class="imprint__btn__container">
@@ -48,7 +48,7 @@
             <div class="container imprint__content">
                 <div class="imprint__header">
                     <h1>Impressum</h1>
-                    <button (click)="hideImprint()" class="imprint__close noSelect">
+                    <button (click)="hideImprint()" class="imprint__close">
                         <span class="imprint__close__bar"></span>
                     </button>
                 </div>

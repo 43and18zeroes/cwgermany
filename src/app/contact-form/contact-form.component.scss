@@ -114,8 +114,10 @@ hr {
     justify-content: center;
 
     button {
-        &:hover {
-            font-size: 24.1px;
+        @media (hover: hover) {
+            &:hover {
+                font-size: 24.1px;
+            }
         }
     }
 }
@@ -127,7 +129,7 @@ hr {
 
     @media (max-width: 762px) {
         margin-top: 50px;
-    margin-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     a {
@@ -137,8 +139,10 @@ hr {
         cursor: pointer;
         transition: all .125s ease-in-out;
 
-        &:hover {
-            color: $light-blue;
+        @media (hover: hover) {
+            &:hover {
+                color: $light-blue;
+            }
         }
     }
 }

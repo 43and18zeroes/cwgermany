@@ -16,8 +16,10 @@ header {
         text-decoration: none;
         transition: all 125ms ease-in-out;
 
-        &:hover {
-            color: $light-blue;
+        @media (hover: hover) {
+            &:hover {
+                color: $light-blue;
+            }
         }
     }
 }

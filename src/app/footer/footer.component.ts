@@ -20,5 +20,9 @@ export class FooterComponent implements OnInit {
   hideImprint() {
     document.querySelector('.imprint__popup').classList.remove('is__active');
   }
+
+  sectionHero() {
+    document.getElementById("sectionHero").scrollIntoView();
+  }
   
 }
