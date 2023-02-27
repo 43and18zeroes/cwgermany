@@ -23,4 +23,8 @@ export class FooterComponent implements OnInit {
     document.querySelector('.imprint__popup').classList.remove('is__active');
   }
 
+  displayImprint() {
+    document.querySelector('.imprint__popup').classList.toggle('is__active');
+  }
+  
 }
