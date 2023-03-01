@@ -23,7 +23,6 @@ export class ContactFormComponent implements OnInit {
   }
 
   async sendMail() {
-    console.log('Sending mail', this.myForm);
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -35,10 +34,6 @@ export class ContactFormComponent implements OnInit {
     mailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
-
-    console.log('name', nameField.value);
-    console.log('mail', mailField.value);
-    console.log('message', messageField.value);
 
     // Todo: Animation anzeigen
     let fd = new FormData();
@@ -69,8 +64,10 @@ export class ContactFormComponent implements OnInit {
   validateName(nameField) {
     if (nameField.value.length >= 2 && nameField.value.length <= 50) {
       this.nameFieldValid = true;
+      console.log("VALID NAME");
     } else {
       this.nameFieldValid = false;
+      console.log("INVALID NAME");
     }
   }
 
@@ -85,19 +82,31 @@ export class ContactFormComponent implements OnInit {
         const mailFieldAfterAtArray = mailFieldArray1Assist.split(".");
         const mailFieldAfterAtArray0 = mailFieldAfterAtArray[0];
         const mailFieldAfterAtArray1 = mailFieldAfterAtArray[1];
-        if(mailFieldAfterAtArray0.length >= 2 && mailFieldAfterAtArray1.length >= 2) {
-          console.log("VALID MAIL");
+        if (mailFieldAfterAtArray0.length >= 2 && mailFieldAfterAtArray1.length >= 2) {
+          console.log("VALID EMAIL");
           this.mailFieldValid = true;
+        } else {
+          console.log("INVALID EMAIL");
+          this.mailFieldValid = false;
         }
+      } else {
+        console.log("INVALID EMAIL");
+        this.mailFieldValid = false;
       }
     } else {
-      console.log("INVALID MAIL");
+      console.log("INVALID EMAIL");
       this.mailFieldValid = false;
     }
   }
 
   validateMessage(messageField) {
-
+    if (messageField.value.length >= 10 && messageField.value.length <= 1000) {
+      console.log("VALID MESSAGE");
+      this.messageFieldValid = true;
+    } else {
+      console.log("INVALID MESSAGE");
+      this.messageFieldValid = false;
+    }
   }
 
   sectionHero() {
