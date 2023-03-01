@@ -59,6 +59,7 @@ export class ContactFormComponent implements OnInit {
     this.validateName(nameField);
     this.validateMail(mailField);
     this.validateMessage(messageField);
+    this.validateForm();
   }
 
   validateName(nameField) {
@@ -83,29 +84,38 @@ export class ContactFormComponent implements OnInit {
         const mailFieldAfterAtArray0 = mailFieldAfterAtArray[0];
         const mailFieldAfterAtArray1 = mailFieldAfterAtArray[1];
         if (mailFieldAfterAtArray0.length >= 2 && mailFieldAfterAtArray1.length >= 2) {
-          console.log("VALID EMAIL");
           this.mailFieldValid = true;
+          console.log("VALID EMAIL");
         } else {
-          console.log("INVALID EMAIL");
           this.mailFieldValid = false;
+          console.log("INVALID EMAIL");
         }
       } else {
-        console.log("INVALID EMAIL");
         this.mailFieldValid = false;
+        console.log("INVALID EMAIL");
       }
     } else {
-      console.log("INVALID EMAIL");
       this.mailFieldValid = false;
+      console.log("INVALID EMAIL");
     }
   }
 
   validateMessage(messageField) {
     if (messageField.value.length >= 10 && messageField.value.length <= 1000) {
-      console.log("VALID MESSAGE");
       this.messageFieldValid = true;
+      console.log("VALID MESSAGE");
     } else {
-      console.log("INVALID MESSAGE");
       this.messageFieldValid = false;
+      console.log("INVALID MESSAGE");
+    }
+  }
+
+  validateForm() {
+    if (this.nameFieldValid, this.mailFieldValid, this.messageFieldValid) {
+      this.formDataValid = true;
+      console.log("VALID FORM");
+    } else {
+      console.log("INVALID FORM");
     }
   }
 
