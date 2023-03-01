@@ -14,6 +14,11 @@ export class ContactFormComponent implements OnInit {
 
   constructor() { }
 
+  nameFieldValid = false;
+  mailFieldValid = false;
+  messageFieldValid = false;
+  formDataValid = false;
+
   ngOnInit(): void {
   }
 
@@ -23,14 +28,17 @@ export class ContactFormComponent implements OnInit {
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
+
+    this.validateContactForm(nameField, mailField, messageField);
+
     nameField.disabled = true;
     mailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
 
-    console.log('name', this.messageField);
-    console.log('mail', this.mailField);
-    console.log('message', this.messageField);
+    console.log('name', nameField.value);
+    console.log('mail', mailField.value);
+    console.log('message', messageField.value);
 
     // Todo: Animation anzeigen
     let fd = new FormData();
@@ -50,6 +58,46 @@ export class ContactFormComponent implements OnInit {
     mailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+  }
+
+  validateContactForm(nameField, mailField, messageField) {
+    this.validateName(nameField);
+    this.validateMail(mailField);
+    this.validateMessage(messageField);
+  }
+
+  validateName(nameField) {
+    if (nameField.value.length >= 2 && nameField.value.length <= 50) {
+      this.nameFieldValid = true;
+    } else {
+      this.nameFieldValid = false;
+    }
+  }
+
+  validateMail(mailField) {
+    if (mailField.value.includes("@")) {
+      this.mailFieldValid = true;
+      const mailFieldArray = mailField.value.split("@");
+      const mailFieldArray0 = mailFieldArray[0];
+      const mailFieldArray1 = mailFieldArray[1];
+      const mailFieldArray1Assist = mailFieldArray1;
+      if (mailFieldArray0.length >= 2 && mailFieldArray1.includes(".")) {
+        const mailFieldAfterAtArray = mailFieldArray1Assist.split(".");
+        const mailFieldAfterAtArray0 = mailFieldAfterAtArray[0];
+        const mailFieldAfterAtArray1 = mailFieldAfterAtArray[1];
+        if(mailFieldAfterAtArray0.length >= 2 && mailFieldAfterAtArray1.length >= 2) {
+          console.log("VALID MAIL");
+          this.mailFieldValid = true;
+        }
+      }
+    } else {
+      console.log("INVALID MAIL");
+      this.mailFieldValid = false;
+    }
+  }
+
+  validateMessage(messageField) {
+
   }
 
   sectionHero() {

@@ -20,9 +20,9 @@
             <div class="contact__content__form">
 
                 <form (submit)="sendMail()" ngNativeValidate #myForm>
-                    <input class="textfields" required type="text" name="name" #nameField placeholder="Your name">
-                    <input class="textfields" required type="email" name="mail" #mailField placeholder="Your email">
-                    <textarea class="textfields textarea" required type="text" name="message" #messageField
+                    <input class="textfields" type="text" name="name" #nameField placeholder="Your name">
+                    <input class="textfields" type="text" name="mail" #mailField placeholder="Your email">
+                    <textarea class="textfields textarea" type="text" name="message" #messageField
                         placeholder="Your message"></textarea>
                     <div class="form__btn__div">
                         <button class="btn__lightblue" #sendButton>Send message :)</button>
