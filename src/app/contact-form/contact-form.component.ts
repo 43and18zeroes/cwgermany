@@ -74,7 +74,6 @@ export class ContactFormComponent implements OnInit {
 
   validateMail(mailField) {
     if (mailField.value.includes("@")) {
-      this.mailFieldValid = true;
       const mailFieldArray = mailField.value.split("@");
       const mailFieldArray0 = mailFieldArray[0];
       const mailFieldArray1 = mailFieldArray[1];
