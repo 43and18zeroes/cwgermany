@@ -29,6 +29,11 @@ body {
     font-weight: 400;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 .container {
     width: 1440px;
     padding: 0 $padding-container;

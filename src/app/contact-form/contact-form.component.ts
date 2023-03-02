@@ -98,14 +98,26 @@ export class ContactFormComponent implements OnInit {
   }
 
   formInvalidFeedback() {
-    if (!this.nameFieldValid) {
+    if (this.nameFieldValid) {
+      this.nameField.nativeElement.classList.add('textfields__valid');
+      this.nameField.nativeElement.classList.remove('textfields__invalid');
+    } else {
       this.nameField.nativeElement.classList.add('textfields__invalid');
+      this.nameField.nativeElement.classList.remove('textfields__valid');
     }
-    if (!this.mailFieldValid) {
+    if (this.mailFieldValid) {
+      this.mailField.nativeElement.classList.add('textfields__valid');
+      this.mailField.nativeElement.classList.remove('textfields__invalid');
+    } else {
       this.mailField.nativeElement.classList.add('textfields__invalid');
+      this.mailField.nativeElement.classList.remove('textfields__valid');
     }
-    if (!this.messageFieldValid) {
+    if (this.messageFieldValid) {
+      this.messageField.nativeElement.classList.add('textfields__valid');
+      this.messageField.nativeElement.classList.remove('textfields__invalid');
+    } else {
       this.messageField.nativeElement.classList.add('textfields__invalid');
+      this.messageField.nativeElement.classList.remove('textfields__valid');
     }
   }
 

@@ -104,8 +104,14 @@ hr {
     }
 }
 
+.textfields__valid {
+    border: 2px solid #2E844D;
+    outline: #2E844D;
+}
+
 .textfields__invalid {
-    border: 1px solid red;
+    border: 2px solid red;
+    outline: red;
 }
 
 .textarea {
