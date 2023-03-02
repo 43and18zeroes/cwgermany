@@ -91,7 +91,22 @@ export class ContactFormComponent implements OnInit {
   validateForm() {
     if (this.nameFieldValid && this.mailFieldValid && this.messageFieldValid) {
       this.formDataValid = true;
-    } else { this.formDataValid = false; }
+    } else {
+      this.formDataValid = false;
+      this.formInvalidFeedback();
+    }
+  }
+
+  formInvalidFeedback() {
+    if (!this.nameFieldValid) {
+      this.nameField.nativeElement.classList.add('textfields__invalid');
+    }
+    if (!this.mailFieldValid) {
+      this.mailField.nativeElement.classList.add('textfields__invalid');
+    }
+    if (!this.messageFieldValid) {
+      this.messageField.nativeElement.classList.add('textfields__invalid');
+    }
   }
 
   sectionHero() {

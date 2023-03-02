@@ -104,6 +104,10 @@ hr {
     }
 }
 
+.textfields__invalid {
+    border: 1px solid red;
+}
+
 .textarea {
     height: 202px;
     resize: none;
