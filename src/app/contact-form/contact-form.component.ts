@@ -30,29 +30,31 @@ export class ContactFormComponent implements OnInit {
 
     this.validateContactForm(nameField, mailField, messageField);
 
-    nameField.disabled = true;
-    mailField.disabled = true;
-    messageField.disabled = true;
-    sendButton.disabled = true;
+    if (this.formDataValid) {
+      nameField.disabled = true;
+      mailField.disabled = true;
+      messageField.disabled = true;
+      sendButton.disabled = true;
 
-    // Todo: Animation anzeigen
-    let fd = new FormData();
-    fd.append('name', nameField.value);
-    fd.append('mail', mailField.value);
-    fd.append('message', messageField.value);
+      // Todo: Animation anzeigen
+      let fd = new FormData();
+      fd.append('name', nameField.value);
+      fd.append('mail', mailField.value);
+      fd.append('message', messageField.value);
 
-    await fetch('https://cwgermany.de/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd
-      }
-    );
+      await fetch('https://cwgermany.de/send_mail/send_mail.php',
+        {
+          method: 'POST',
+          body: fd
+        }
+      );
 
-    // Todo: Text anzeigen: Nachricht gesendet
-    nameField.disabled = false;
-    mailField.disabled = false;
-    messageField.disabled = false;
-    sendButton.disabled = false;
+      // Todo: Text anzeigen: Nachricht gesendet
+      nameField.disabled = false;
+      mailField.disabled = false;
+      messageField.disabled = false;
+      sendButton.disabled = false;
+    }
   }
 
   validateContactForm(nameField, mailField, messageField) {
