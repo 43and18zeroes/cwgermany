@@ -65,57 +65,31 @@ export class ContactFormComponent implements OnInit {
   validateName(nameField) {
     if (nameField.value.length >= 2 && nameField.value.length <= 50) {
       this.nameFieldValid = true;
-      console.log("VALID NAME");
-    } else {
-      this.nameFieldValid = false;
-      console.log("INVALID NAME");
-    }
+    } else { this.nameFieldValid = false; }
   }
 
   validateMail(mailField) {
     if (mailField.value.includes("@")) {
       const mailFieldArray = mailField.value.split("@");
-      const mailFieldArray0 = mailFieldArray[0];
-      const mailFieldArray1 = mailFieldArray[1];
-      const mailFieldArray1Assist = mailFieldArray1;
-      if (mailFieldArray0.length >= 2 && mailFieldArray1.includes(".")) {
-        const mailFieldAfterAtArray = mailFieldArray1Assist.split(".");
-        const mailFieldAfterAtArray0 = mailFieldAfterAtArray[0];
-        const mailFieldAfterAtArray1 = mailFieldAfterAtArray[1];
-        if (mailFieldAfterAtArray0.length >= 2 && mailFieldAfterAtArray1.length >= 2) {
+      if (mailFieldArray[0].length >= 2 && mailFieldArray[1].includes(".")) {
+        const mailFieldAfterAtArray = mailFieldArray[1].split(".");
+        if (mailFieldAfterAtArray[0].length >= 2 && mailFieldAfterAtArray[1].length >= 2) {
           this.mailFieldValid = true;
-          console.log("VALID EMAIL");
-        } else {
-          this.mailFieldValid = false;
-          console.log("INVALID EMAIL");
-        }
-      } else {
-        this.mailFieldValid = false;
-        console.log("INVALID EMAIL");
-      }
-    } else {
-      this.mailFieldValid = false;
-      console.log("INVALID EMAIL");
-    }
+        } else { this.mailFieldValid = false; }
+      } else { this.mailFieldValid = false; }
+    } else { this.mailFieldValid = false; }
   }
 
   validateMessage(messageField) {
     if (messageField.value.length >= 10 && messageField.value.length <= 1000) {
       this.messageFieldValid = true;
-      console.log("VALID MESSAGE");
-    } else {
-      this.messageFieldValid = false;
-      console.log("INVALID MESSAGE");
-    }
+    } else { this.messageFieldValid = false; }
   }
 
   validateForm() {
-    if (this.nameFieldValid, this.mailFieldValid, this.messageFieldValid) {
+    if (this.nameFieldValid && this.mailFieldValid && this.messageFieldValid) {
       this.formDataValid = true;
-      console.log("VALID FORM");
-    } else {
-      console.log("INVALID FORM");
-    }
+    } else { this.formDataValid = false; }
   }
 
   sectionHero() {
