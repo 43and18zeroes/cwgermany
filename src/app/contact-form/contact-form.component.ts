@@ -93,31 +93,23 @@ export class ContactFormComponent implements OnInit {
       this.formDataValid = true;
     } else {
       this.formDataValid = false;
-      this.formInvalidFeedback();
+      this.formValidationFeedback();
     }
   }
 
-  formInvalidFeedback() {
-    if (this.nameFieldValid) {
-      this.nameField.nativeElement.classList.add('textfields__valid');
-      this.nameField.nativeElement.classList.remove('textfields__invalid');
+  formValidationFeedback() {
+    this.formValidationToggleCSSClass(this.nameField, this.nameFieldValid);
+    this.formValidationToggleCSSClass(this.mailField, this.mailFieldValid);
+    this.formValidationToggleCSSClass(this.messageField, this.messageFieldValid);
+  }
+
+  formValidationToggleCSSClass(field, isValid) {
+    if (isValid) {
+      field.nativeElement.classList.add('textfields__valid');
+      field.nativeElement.classList.remove('textfields__invalid');
     } else {
-      this.nameField.nativeElement.classList.add('textfields__invalid');
-      this.nameField.nativeElement.classList.remove('textfields__valid');
-    }
-    if (this.mailFieldValid) {
-      this.mailField.nativeElement.classList.add('textfields__valid');
-      this.mailField.nativeElement.classList.remove('textfields__invalid');
-    } else {
-      this.mailField.nativeElement.classList.add('textfields__invalid');
-      this.mailField.nativeElement.classList.remove('textfields__valid');
-    }
-    if (this.messageFieldValid) {
-      this.messageField.nativeElement.classList.add('textfields__valid');
-      this.messageField.nativeElement.classList.remove('textfields__invalid');
-    } else {
-      this.messageField.nativeElement.classList.add('textfields__invalid');
-      this.messageField.nativeElement.classList.remove('textfields__valid');
+      field.nativeElement.classList.add('textfields__invalid');
+      field.nativeElement.classList.remove('textfields__valid');
     }
   }
 
