@@ -37,7 +37,6 @@ export class ContactFormComponent implements OnInit {
       messageField.disabled = true;
       sendButton.disabled = true;
 
-      // Todo: Animation anzeigen
       let fd = new FormData();
       fd.append('name', nameField.value);
       fd.append('mail', mailField.value);
@@ -50,10 +49,9 @@ export class ContactFormComponent implements OnInit {
         }
       );
 
-      nameField.disabled = false;
-      mailField.disabled = false;
-      messageField.disabled = false;
-      sendButton.disabled = false;
+      this.reEnableForm(nameField, mailField, messageField, sendButton);
+      this.reStyleForm(nameField, mailField, messageField);
+      this.clearForm(nameField, mailField, messageField);
       this.displayFormSubmitSuccessful();
     }
   }
@@ -112,6 +110,28 @@ export class ContactFormComponent implements OnInit {
       field.nativeElement.classList.add('textfields__invalid');
       field.nativeElement.classList.remove('textfields__valid');
     }
+  }
+
+  reEnableForm(nameField, mailField, messageField, sendButton) {
+    nameField.disabled = false;
+    mailField.disabled = false;
+    messageField.disabled = false;
+    sendButton.disabled = false;
+  }
+
+  reStyleForm(nameField, mailField, messageField) {
+    nameField.classList.remove('textfields__valid');
+    nameField.classList.remove('textfields__invalid');
+    mailField.classList.remove('textfields__valid');
+    mailField.classList.remove('textfields__invalid');
+    messageField.classList.remove('textfields__valid');
+    messageField.classList.remove('textfields__invalid');
+  }
+
+  clearForm(nameField, mailField, messageField) {
+    nameField.value = "";
+    mailField.value = "";
+    messageField.value = "";
   }
 
   displayFormSubmitSuccessful() {
