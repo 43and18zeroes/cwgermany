@@ -94,8 +94,8 @@ export class ContactFormComponent implements OnInit {
       this.formDataValid = true;
     } else {
       this.formDataValid = false;
-      this.formValidationFeedback();
     }
+    this.formValidationFeedback();
   }
 
   formValidationFeedback() {
