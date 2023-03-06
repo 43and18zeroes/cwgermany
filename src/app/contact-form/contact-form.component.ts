@@ -11,6 +11,7 @@ export class ContactFormComponent implements OnInit {
   @ViewChild('mailField') mailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
+  @ViewChild('formSubmitSuccessful') formSubmitSuccessful!: ElementRef;
 
   constructor() { }
 
@@ -49,11 +50,11 @@ export class ContactFormComponent implements OnInit {
         }
       );
 
-      // Todo: Text anzeigen: Nachricht gesendet
       nameField.disabled = false;
       mailField.disabled = false;
       messageField.disabled = false;
       sendButton.disabled = false;
+      this.displayFormSubmitSuccessful();
     }
   }
 
@@ -111,6 +112,14 @@ export class ContactFormComponent implements OnInit {
       field.nativeElement.classList.add('textfields__invalid');
       field.nativeElement.classList.remove('textfields__valid');
     }
+  }
+
+  displayFormSubmitSuccessful() {
+    const formSubmitSuccessful = this.formSubmitSuccessful.nativeElement;
+    formSubmitSuccessful.classList.toggle('is__active');
+    setTimeout(() => {
+      formSubmitSuccessful.classList.toggle('is__active');
+    }, 2000);
   }
 
   sectionHero() {

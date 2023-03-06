@@ -160,6 +160,15 @@ hr {
     }
 }
 
+.form__submit__successful {
+    transition: 0.2s ease-in-out;
+    display: none;
+}
+
+.form__submit__successful.is__active {
+    display: flex;
+}
+
 .arrowup__container {
     text-align: right;
     margin-top: 75px;
