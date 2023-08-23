@@ -298,6 +298,11 @@ footer {
     justify-content: space-between;
 }
 
+.dataprivacy__body {
+    overflow-y: auto;
+    height: calc(100vh - 100px - 41.5px - 152px - 41.5px - 30px);
+}
+
 .dataprivacy__close {
     position: relative;
     display: block;
