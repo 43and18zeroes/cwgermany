@@ -21,6 +21,14 @@ export class FooterComponent implements OnInit {
     document.querySelector('.imprint__popup').classList.remove('is__active');
   }
 
+  displayDataPrivacy() {
+    document.querySelector('.dataprivacy__popup').classList.toggle('is__active');
+  }
+
+  hideDataPrivacy() {
+    document.querySelector('.dataprivacy__popup').classList.remove('is__active');
+  }
+
   sectionHero() {
     document.getElementById("sectionHero").scrollIntoView();
   }

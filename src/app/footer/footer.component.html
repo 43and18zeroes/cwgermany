@@ -7,6 +7,9 @@
             <button class="imprint__btn" (click)="displayImprint()">
                 <span>Impressum</span>
             </button>
+            <button class="imprint__btn" (click)="displayDataPrivacy()">
+                <span>Datenschutzerklärung</span>
+            </button>
         </div>
 
         <div class="footer__center footer__hidden__mobile">
@@ -43,6 +46,10 @@
                 <button class="imprint__btn" (click)="displayImprint()">
                     <span>Impressum</span>
                 </button>
+                <br>
+                <button class="imprint__btn" (click)="displayDataPrivacy()">
+                    <span>Datenschutzerklärung</span>
+                </button>
             </div>
         </div>
 
@@ -68,7 +75,7 @@
             <div class="container dataprivacy__content">
                 <div class="dataprivacy__header">
                     <h1>Datenschutz&shy;erkl&auml;rung</h1>
-                    <button (click)="hideImprint()" class="dataprivacy__close">
+                    <button (click)="hideDataPrivacy()" class="dataprivacy__close">
                         <span class="dataprivacy__close__bar"></span>
                     </button>
                 </div>
