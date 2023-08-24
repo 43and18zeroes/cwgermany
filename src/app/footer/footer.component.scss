@@ -321,12 +321,11 @@ footer {
         .dataprivacy__body {
             overflow-y: auto;
             height: calc(100vh - 100px - 41.5px - 152px - 41.5px - 30px);
+            // border: 1px solid #4B47FF;
 
-            // Firefox
             scrollbar-width: auto;
-            scrollbar-color: #00bee8 rgba(20, 29, 47, 0.95);
+            scrollbar-color: #4B47FF rgba(20, 29, 47, 0.95);
 
-            // Chrome, Edge, and Safari
             &::-webkit-scrollbar {
                 width: 16px;
             }
@@ -336,7 +335,7 @@ footer {
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: #00bee8;
+                background-color: #4B47FF;
                 border-radius: 10px;
                 border: 3px solid rgba(20, 29, 47, 0.95);
             }
