@@ -265,14 +265,16 @@ footer {
             display: flex;
             justify-content: space-between;
 
-            @media (max-width: 576px) {
-                h1 {
-                    font-size: 34px;
-                }
-            }
-
             h1 {
                 font-size: 50px;
+
+                @media (max-width: 576px) {
+                    font-size: 34px;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 28px;
+                }
             }
 
             .dataprivacy__close {
