@@ -272,7 +272,10 @@
         color: #4B47FF;
         text-transform: uppercase;
         line-height: 54px;
-        text-shadow: 0px 0px 2px #d6d6d6;
+
+        @media (max-width: 1350px) {
+            text-shadow: 0px 0px 10px #000;
+        }
     }
 }
 
