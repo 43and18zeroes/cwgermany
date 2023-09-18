@@ -19,7 +19,7 @@ h4 {
 }
 
 .portfolio__buttons__live {
-    font-size: 23px;
+    font-size: 22px;
     padding: 15px 30px;
     border-radius: 10px;
     border: none;
@@ -194,7 +194,7 @@ h4 {
             }
 
             .portfolio__buttons__live {
-                margin-right: 64px;
+                margin-right: 50px;
             }
         }
     }
@@ -277,7 +277,7 @@ h4 {
             }
 
             .portfolio__buttons__github {
-                margin-left: 64px;
+                margin-left: 50px;
             }
         }
     }
@@ -342,7 +342,7 @@ h4 {
 
 @media (max-width: 406px) {
     .portfolio__all__buttons {
-        margin: 0 10px !important;
+        margin: 0 9px !important;
         font-size: 18px;
     }
 }
